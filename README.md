@@ -91,7 +91,7 @@ Follow the steps below to run the real-time Rock, Paper, Scissors recognition sy
 ### 1. Clone this repo and install dependencies
 
 ```bash
-git clone https://github.com/your-username/rock-paper-scissors-yolov5.git
+git clone https://github.com/Prosperteni/Real-Time-Rock-Paper-Scissors-Recognition-Using-YOLOv5.git
 cd rock-paper-scissors-yolov5
 pip install -r requirements.txt
 ```
