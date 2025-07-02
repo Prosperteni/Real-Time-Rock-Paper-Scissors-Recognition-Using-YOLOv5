@@ -103,10 +103,10 @@ The trained YOLOv5 model weights (`best.pt`) are too large to be stored on GitHu
 
 📦 [Download best.pt from Google Drive](https://drive.google.com/file/d/19mHGk3xd861rQr9898OXcm90axJWPQfQ/view?usp=drive_link)
 
-After downloading, place the `best.pt` file into the `models/` directory in your project folder:
+After downloading, place the `best.pt` file into your project folder:
 
 ```plaintext
-models/
+Real-Time-Rock-Paper-Scissors-Recognition-Using-YOLOv5/
 └── best.pt
 ```
 
@@ -114,7 +114,7 @@ models/
 Make sure your webcam is connected. Then run:
 
 ```bash
-python scripts/detect.py --weights models/best.pt --source 0
+python detect.py --weights best.pt --source 0
 ```
 
 `--source 0` refers to the webcam.
@@ -122,10 +122,23 @@ python scripts/detect.py --weights models/best.pt --source 0
 You can also test an image or video by changing the source:
 `--source path/to/image.jpg` or `--source path/to/video.mp4`
 
-### 4. Optional: Train the Model from Scratch
+### 4. Download the Dataset
+
+Download the dataset from the following link and place it into the main project folder (e.g., `datasets/`):
+
+📥 [Download Dataset](https://drive.google.com/drive/folders/17JI204GTLbXNTLnIk_lijywd3qAkdN0K?usp=drive_link)
+
+
+Make sure the folder structure matches what your config file (`data.yaml`) expects.
+
+---
+
+### 5. Optional: Train the Model from Scratch
+
 If you want to retrain the model using your own dataset:
+
 ```bash
-python train.py --img 640 --batch 16 --epochs 50 --data datasets/data.yaml --weights models/best.pt
+python train.py --img 640 --batch 16 --epochs 50 --data datasets/data.yaml --weights best.pt
 ```
    Note: Make sure your dataset is correctly formatted and data.yaml is set up properly.
 
