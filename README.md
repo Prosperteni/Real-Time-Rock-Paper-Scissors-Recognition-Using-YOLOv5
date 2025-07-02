@@ -34,21 +34,21 @@ This project is a real-time hand gesture recognition system built with **YOLOv5*
 
 📂 rock-paper-scissors-yolov5/
 ├── 📂 datasets/
-│   ├── 📂 images/
-│   │   ├── 📂 train/
-│   │   └── 📂 validation/
-│   ├── 📂 labels/
-│   │   ├── 📂 train/
-│   │   └── 📂 validation/
-│   ├── classes.txt            # Class names (e.g., rock, paper, scissors)
-│   └── data.yaml             # Dataset config file for YOLOv5
+│ ├── 📂 images/
+│ │ ├── 📂 train/
+│ │ └── 📂 validation/
+│ ├── 📂 labels/
+│ │ ├── 📂 train/
+│ │ └── 📂 validation/
+│ ├── classes.txt # Class names (e.g., rock, paper, scissors)
+│ └── data.yaml # Dataset config file for YOLOv5
 ├── 📂 models/
-│   └── best.pt               # Trained model weights
+│ └── best.pt # Trained model weights
 ├── 📂 scripts/
-│   ├── train.py              # Training script
-│   ├── detect.py             # Detection script
-│   ├── split.py              # Optional: dataset splitter
-│   └── gen-data-yaml.py      # Script to generate data.yaml
+│ ├── train.py # Training script
+│ ├── detect.py # Detection script
+│ ├── split.py # Optional: dataset splitter
+│ └── gen-data-yaml.py # Script to generate data.yaml
 
 
 ---
@@ -121,7 +121,7 @@ You can also test an image or video by changing the source:
 ### 4. Optional: Train the Model from Scratch
 If you want to retrain the model using your own dataset:
 ```bash
-python train.py --img 640 --batch 16 --epochs 50 --data datasets/data.yaml --weights best.pt
+python train.py --img 640 --batch 16 --epochs 50 --data datasets/data.yaml --weights models/best.pt
 ```
    Note: Make sure your dataset is correctly formatted and data.yaml is set up properly.
 
