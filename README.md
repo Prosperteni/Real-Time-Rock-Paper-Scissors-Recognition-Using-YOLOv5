@@ -89,9 +89,31 @@ You can read the full technical documentation and implementation guide below:
 
 ## 🚀 Run It Yourself
 
+Follow the steps below to run the real-time Rock, Paper, Scissors recognition system on your own machine.
+
 ### 1. Clone this repo and install dependencies
 
 ```bash
 git clone https://github.com/your-username/rock-paper-scissors-yolov5.git
 cd rock-paper-scissors-yolov5
 pip install -r requirements.txt
+```
+
+### 2. Download the Trained Model
+The trained YOLOv5 model weights (best.pt) are too large to be stored on GitHub directly.
+
+📦 Download best.pt from Google Drive (insert your actual link)
+
+After downloading, place the best.pt file into the models/ directory.
+
+### 3. Run Real-Time Detection
+Make sure your webcam is connected. Then run:
+
+```bash
+python scripts/detect.py --weights models/best.pt --source 0
+```
+
+--```bash source 0``` refers to the webcam.
+
+You can also test an image or video by changing the source:
+--source path/to/image.jpg or --source path/to/video.mp4
