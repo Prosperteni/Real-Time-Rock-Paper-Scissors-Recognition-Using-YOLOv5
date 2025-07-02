@@ -52,3 +52,50 @@ datasets/
 │   ├── detect.py              # Detection script
 │   ├── split.py               # Optional: dataset splitter
 │   ├── gen-data-yaml.py       # Script to generate data.yaml
+
+
+
+---
+
+## 🧠 How It Works
+
+1. **Data Collection**  
+   Hand gesture images (rock, paper, scissors) were captured manually using a webcam.
+
+2. **Annotation**  
+   Bounding boxes were drawn manually using LabelImg and exported in YOLO format.
+
+3. **Training**  
+   - Model: YOLOv5s  
+   - Epochs: 25  
+   - Batch Size: 16  
+   - Input Size: 640x640  
+   - Achieved mAP@0.5: 0.96
+
+4. **Deployment**  
+   The trained model was used for live webcam detection using OpenCV on Windows.
+
+   ---
+
+## 🖼️ Project Highlights
+![Training results](https://github.com/user-attachments/assets/55fb96c3-329c-421a-9bf0-5ae6e1547c7a)
+![Detection Sample](https://github.com/user-attachments/assets/3007d3b5-88f0-4d16-8960-082c50b912f4)
+
+
+
+## 📘 Technical Report
+
+You can read the full technical documentation and implementation guide below:
+
+📄 [Download the PDF Report](https://lnkd.in/dan4c9iP)
+[Report.pdf](https://github.com/user-attachments/files/21011879/Report.pdf)
+
+
+## 🚀 Run It Yourself
+
+### 1. Clone this repo and install dependencies
+
+```bash
+git clone https://github.com/your-username/rock-paper-scissors-yolov5.git
+cd rock-paper-scissors-yolov5
+pip install -r requirements.txt
