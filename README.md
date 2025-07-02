@@ -98,13 +98,18 @@ git clone https://github.com/your-username/rock-paper-scissors-yolov5.git
 cd rock-paper-scissors-yolov5
 pip install -r requirements.txt
 ```
-
 ### 2. Download the Trained Model
-The trained YOLOv5 model weights (best.pt) are too large to be stored on GitHub directly.
 
-📦 Download best.pt from Google Drive ((https://drive.google.com/file/d/19mHGk3xd861rQr9898OXcm90axJWPQfQ/view?usp=drive_link))
+The trained YOLOv5 model weights (`best.pt`) are too large to be stored on GitHub directly.
 
-After downloading, place the best.pt file into the models/ directory.
+📦 [Download best.pt from Google Drive](https://drive.google.com/file/d/19mHGk3xd861rQr9898OXcm90axJWPQfQ/view?usp=drive_link)
+
+After downloading, place the `best.pt` file into the `models/` directory in your project folder:
+
+```plaintext
+models/
+└── best.pt
+```
 
 ### 3. Run Real-Time Detection
 Make sure your webcam is connected. Then run:
