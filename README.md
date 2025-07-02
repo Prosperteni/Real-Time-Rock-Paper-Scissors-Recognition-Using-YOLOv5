@@ -31,7 +31,7 @@ This project is a real-time hand gesture recognition system built with **YOLOv5*
 ---
 
 ## 📂 Project Structure
-
+```plaintext
 📂 rock-paper-scissors-yolov5/
 ├── 📂 datasets/
 │   ├── 📂 images/
@@ -49,7 +49,7 @@ This project is a real-time hand gesture recognition system built with **YOLOv5*
 │   ├── detect.py         # Detection script
 │   ├── split.py          # Optional: dataset splitter
 │   └── gen-data-yaml.py  # Script to generate data.yaml
-
+```
 ---
 
 ## 🧠 How It Works
