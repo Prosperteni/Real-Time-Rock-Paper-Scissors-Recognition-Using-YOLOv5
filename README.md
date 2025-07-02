@@ -102,7 +102,7 @@ pip install -r requirements.txt
 ### 2. Download the Trained Model
 The trained YOLOv5 model weights (best.pt) are too large to be stored on GitHub directly.
 
-📦 Download best.pt from Google Drive (insert your actual link)
+📦 Download best.pt from Google Drive ((https://drive.google.com/file/d/19mHGk3xd861rQr9898OXcm90axJWPQfQ/view?usp=drive_link))
 
 After downloading, place the best.pt file into the models/ directory.
 
@@ -113,7 +113,16 @@ Make sure your webcam is connected. Then run:
 python scripts/detect.py --weights models/best.pt --source 0
 ```
 
---```bash source 0``` refers to the webcam.
+`--source 0` refers to the webcam.
 
 You can also test an image or video by changing the source:
---source path/to/image.jpg or --source path/to/video.mp4
+`--source path/to/image.jpg` or `--source path/to/video.mp4`
+
+### 4. Optional: Train the Model from Scratch
+If you want to retrain the model using your own dataset:
+```bash
+python train.py --img 640 --batch 16 --epochs 50 --data datasets/data.yaml --weights best.pt
+```
+   Note: Make sure your dataset is correctly formatted and data.yaml is set up properly.
+
+
