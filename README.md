@@ -106,7 +106,7 @@ The trained YOLOv5 model weights (`best.pt`) are too large to be stored on GitHu
 After downloading, place the `best.pt` file into your project folder:
 
 ```plaintext
-Real-Time-Rock-Paper-Scissors-Recognition-Using-YOLOv5/
+📂Real-Time-Rock-Paper-Scissors-Recognition-Using-YOLOv5/
 └── best.pt
 ```
 
@@ -124,7 +124,11 @@ You can also test an image or video by changing the source:
 
 ### 4. Download the Dataset
 
-Download the dataset from the following link and place it into the main project folder (e.g., `datasets/`):
+Download the dataset from the following link and place it into the main project folder (e.g., `dataset/`):
+```plaintext
+📂 Real-Time-Rock-Paper-Scissors-Recognition-Using-YOLOv5/
+└── 📂 dataset
+```
 
 📥 [Download Dataset](https://drive.google.com/drive/folders/17JI204GTLbXNTLnIk_lijywd3qAkdN0K?usp=drive_link)
 
